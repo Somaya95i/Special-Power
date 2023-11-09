@@ -1,328 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Offices</title>
 
-        <!-- ===================================  FAVICON  ================================== -->
-        <link rel="shortcut icon" href="./assest/img/favicon.png" type="image/x-icon">
+    <!-- ===================================  FAVICON  ================================== -->
+    <link
+      rel="shortcut icon"
+      href="./assest/img/favicon.png"
+      type="image/x-icon"
+    />
 
-        <!-- ===================================  REMIX ICONS  ================================== -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-        <!-- ===================================  Font awesome  ================================== -->
-        <script src="https://kit.fontawesome.com/e29ee4bc00.js" crossorigin="anonymous"></script>
-    
-        <!-- =================================== Bootstrap CSS ====================================-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    
-        <!-- ===================================  SWIPER CSS  ================================== -->
-        <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
-    
-        <!-- ===================================  css  ================================== -->
-        <link rel="stylesheet" href="./assest/css/style.css">
-</head>
+    <!-- ===================================  REMIX ICONS  ================================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- ===================================  Font awesome  ================================== -->
+    <script
+      src="https://kit.fontawesome.com/e29ee4bc00.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- =================================== Bootstrap CSS ====================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- ===================================  SWIPER CSS  ================================== -->
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css" />
+
+    <!-- ===================================  css  ================================== -->
+    <link rel="stylesheet" href="./assest/css/style.css" />
+  </head>
+
+  <body id="body">
+    <!--==================== Header ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="./index.html"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link menu__home">Home</a>
-                    </li>
-                    <li class="nav__item dropdown">
-                        <a href="#about" class="nav__link-but dropdown-toggle menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item "><a class="nav__link menu__ourGroup" href="#Our Group">Our Group</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__chairman" href="./PreviousProjects.html">Previous projects</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__mission" href="./mission.html">our mission</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__vision" href="./vision.html">our Vision</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#popular" class="nav__link menu__services">Our Services</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="./OurOffices.html" class="nav__link menu__ourOffices">Our Offices</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="./news.html" class="nav__link menu__news">News</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="./job.html" class="nav__link menu__job">Job</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="./contact.html" class="nav__link menu__contact">Contact Us</a>
-                    </li>
-
-                    <li class="nav__item dropdown">
-                        <a href="#" class="nav__link-but dropdown-toggle menu__lang" role="button" data-bs-toggle="dropdown">The Language</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item "> <a href="./index.html" ><img src="./assest/img/en.png" width="25" height="12.5"></a> </li>
-                            <li class="dropdown-item "> <a href="./index.html" ><img src="./assest/img/ar.png" width="25" height="12.5"></a> </li>
-                        </ul>
-                    </li>
-                </ul>
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <a href="#home"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
+                </div>
+    
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html#home" class="nav__link menu__home" id="menu__home">Home</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#about" class="nav__link-but dropdown-toggle menu__about" id="menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item "><a class="nav__link menu__ourGroup" id="menu__ourGroup" href="./index.html#Our Group">Our Group</a></li>
+                                <li class="dropdown-item "><a class="nav__link menu__chairman" id="menu__chairman" href="./PreviousProjects.html">Previous projects</a></li>
+                                <li class="dropdown-item "><a class="nav__link menu__mission" id="menu__mission" href="./mission.html">our mission</a></li>
+                                <li class="dropdown-item "><a class="nav__link menu__vision" id="menu__vision" href="./vision.html">our Vision</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="./index.html#popular" class="nav__link menu__services" id="menu__services">Our Services</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="./OurOffices.html" class="nav__link menu__ourOffices" id="menu__ourOffices">Our Offices</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="./news.html" class="nav__link menu__news" id="menu__news">News</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="./job.html" class="nav__link menu__job" id="menu__job">Job</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="./contact.html" class="nav__link menu__contact" id="menu__contact">Contact Us</a>
+                        </li>
+    
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link-but dropdown-toggle menu__lang" id="menu__lang" role="button" data-bs-toggle="dropdown">The Language</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item" id="en"> <img src="./assest/img/en.png" width="25" height="12.5"></a> </li>
+                                <li class="dropdown-item" id="ar"> <img src="./assest/img/ar.png" width="25" height="12.5"></a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+    
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
     </header>
 
+    <!--==================== ourOffices ====================-->
     <section class="Mission section" id="Mission">
-        <h2 class="section__title">Our Offices</h2>
-        <div class="Mission__container container">
-            <div class="Mission__group-img grid">
-                <div class="img__card">
-                    <div class="OurOffices__data">
-                        <h4>Head  Office-Jeddah Special Power Co.</h4>
-                        <p>3427 king abdullah RD,,<br>
-                            P.O.BOX 22231,<br>
-                            Kingdom of Saudi Arabia</p>
-                        <p>lorem ipsum</p>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14847.815221826098!2d39.24325789580786!3d21.509529285516553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3ce0bef6ed6e1%3A0x8f8216c6dd3f677f!2zMzQyNyDYt9ix2YrZgiDYp9mE2YXZhNmDINi52KjYr9in2YTZhNmH2Iwg2KfZhNmB2YrYrdin2KHYjCDYrNiv2KkgMjIyNTE!5e0!3m2!1sar!2ssa!4v1698770990474!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="img__card">
-                    <div class="OurOffices__data">
-                        <h4>Office-Medina Special Power Co.</h4>
-                        <p> 7630 king abdullah RD,<br>
-                            Al-Madinah al-Munawwarah,<br>
-                            Kingdom of Saudi Arabia<br></p>
-                        <p>Tel: lorem ipsum</p>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3572.5395419024558!2d50.113105075108926!3d26.438331976933103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI2JzE4LjAiTiA1MMKwMDYnNTYuNSJF!5e0!3m2!1sen!2sus!4v1684649644561!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-               
-
+      <h2 class="section__title" id="section__title">Our Offices</h2>
+      <div class="Mission__container container">
+        <div class="Mission__group-img grid">
+          <div class="img__card">
+            <div class="OurOffices__data">
+              <h4 id="OurOffice__title1">Head Office-Jeddah Special Power Co.</h4>
+              <p id="OurOffice__description1">
+                3427 king abdullah RD,<br /> P.O.BOX 22231,<br /> Kingdom of Saudi Arabia
+              </p>
             </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14847.815221826098!2d39.24325789580786!3d21.509529285516553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3ce0bef6ed6e1%3A0x8f8216c6dd3f677f!2zMzQyNyDYt9ix2YrZgiDYp9mE2YXZhNmDINi52KjYr9in2YTZhNmH2Iwg2KfZhNmB2YrYrdin2KHYjCDYrNiv2KkgMjIyNTE!5e0!3m2!1sar!2ssa!4v1698770990474!5m2!1sar!2ssa"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
+          <div class="img__card">
+            <div class="OurOffices__data">
+              <h4 id="OurOffice__title2">Office-Medina Special Power Co.</h4>
+              <p id="OurOffice__description2">
+                7630 king abdullah RD,<br /> Al-Madinah al-Munawwarah,<br /> Kingdom of Saudi Arabia<br />
+              </p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3572.5395419024558!2d50.113105075108926!3d26.438331976933103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI2JzE4LjAiTiA1MMKwMDYnNTYuNSJF!5e0!3m2!1sen!2sus!4v1684649644561!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--==================== FOOTER ====================-->
-     <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content grid">
-                <div class="footer__data">
-                    <h3 class="footer__title">Special Power</h3>
-                    <p class="footer__description">We make your dreams come true</p>
-                    <div>
-                        <a href="https://api.whatsapp.com" target="_blank" class="footer__social">
-                            <i class="ri-whatsapp-fill"></i>
-                        </a>
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title" id="footer__title">Special Power</h3>
+            <p class="footer__description" id="footer__description">
+              We make your dreams come true
+            </p>
+            <div>
+              <a
+                href="https://api.whatsapp.com"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-whatsapp-fill"></i>
+              </a>
 
-                        <a href="https://" target="_blank" class="footer__social">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
+              <a href="https://" target="_blank" class="footer__social">
+                <i class="ri-twitter-fill"></i>
+              </a>
 
-                        <a href="mailto: s target="_blank" class="footer__social">
-                            <i class="ri-mail-fill"></i>
-                            
-                        </a>
-                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">About</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="./index.html#popular" class="footer__link">Service</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="./mission.html" class="footer__link">Our Mission</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Company</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="./ChairmanMessage.html" class="footer__link">Previous Projects</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#Our Group" class="footer__link">Our Group</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Support</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="./contact.html" class="footer__link">FAQs</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="./OurOffices.html" class="footer__link">Our Offices</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="./index.html#contact" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+              <a href="mailto: s" target="_blank" class="footer__social">
+                <i class="ri-mail-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="footer__rights">
-                <p class="footer__copy">&#169; 2023 Special Power. All rigths reserved.</p>
-            </div>
+          <div class="footer__data">
+            <h3 class="footer__subtitle" id="footer__subtitle1">About</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="./index.html#popular" class="footer__link" id="footer__link1"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./mission.html" class="footer__link" id="footer__link2"
+                  >Our Mission</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle" id="footer__subtitle2">Company</h3>
+            <ul>
+              <li class="footer__item">
+                <a
+                  href="./ChairmanMessage.html"
+                  class="footer__link"
+                  id="footer__link3"
+                  >Previous Projects</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./index.html#Our Group" class="footer__link" id="footer__link4"
+                  >Our Group</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle" id="footer__subtitle3">Support</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__link" id="footer__link5"
+                  >FAQs</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="./OurOffices.html"
+                  class="footer__link"
+                  id="footer__link6"
+                  >Our Offices</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="./index.html#contact" class="footer__link" id="footer__link7"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy" id="footer__copy">
+            &#169; 2023 Special Power. All rigths reserved.
+          </p>
+          <div class="footer__terms">
+            <a
+              href="https://github.com/Somaya95i?tab=repositories"
+              class="footer__terms-link"
+              target="_blank"
+              >Design and development by : Eng.Somaya Alansari
+            </a>
+            <!-- <a href="#" class="footer__terms-link">Privacy Policy</a> -->
+          </div>
+        </div>
+      </div>
     </footer>
 
+    <style>
+      .Mission {
+        margin-bottom: 5rem;
+      }
+      .Mission .section__title {
+        margin: 4rem 0;
+      }
+      .Mission__group-img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        column-gap: 1.25rem;
+      }
+      .img__card {
+        border: 1px solid var(--first-color-light);
+        border-radius: 15px;
+        box-shadow: 0 12px 16px rgb(237, 168, 168);
+        overflow: hidden;
+        width: 320px;
+        height: 550px;
+        transition: 0.4s;
+      }
+      .img__card iframe {
+        width: 320px;
+        height: 350px;
+      }
+      .OurOffices__data {
+        padding: 20px;
+        text-align: start;
+      }
+      .OurOffices__data h4 {
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 1.25rem;
+      }
+      .OurOffices__data p {
+        font-size: 13px;
+      }
+      .img__card:hover {
+        transition: 0.4s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transform: translate3d(0.5px, 1%, 0.5em);
+      }
 
-        <style>
-            .Mission {
-                margin-bottom: 5rem;
-            }
-            .Mission .section__title {
-                margin: 4rem 0;
-            }
-            .Mission__group-img {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                row-gap: 3rem;
-                column-gap: 1.25rem;
-            }
-            .img__card {
-                border: 1px solid var(--first-color-light);
-                border-radius: 15px;
-                box-shadow: 0 12px 16px rgb(237, 168, 168);
-                overflow: hidden;
-                width: 320px;
-                height: 550px;
-                transition: .4s;
-            }
-            .img__card iframe {
-                width: 320px;
-                height: 350px;
-            }
-            .OurOffices__data {
-                padding: 20px;
-                text-align: start;
-            }
-            .OurOffices__data h4{
-                font-size: 16px;
-                font-weight: bolder;
-                margin-bottom: 1.25rem;
-            }
-            .OurOffices__data p{
-                font-size: 13px;
-            }
-            .img__card:hover {
-                transition: .4s;
-                -webkit-transition: .3s;
-                -moz-transition: .3s;
-                -ms-transition: .3s;
-                -o-transition: .3s;
-                transform: translate3d(.50px, 1%, .50em);
-            }
+      @media screen and (min-width: 992px) {
+        .img__card {
+          width: 290px;
+        }
+      }
+      @media screen and (min-width: 1040px) {
+        .img__card {
+          width: 320px;
+        }
+      }
+    </style>
 
-            @media screen and (min-width: 992px) {
-                .img__card {
-                width: 290px;
-                }
-            }
-            @media screen and (min-width: 1040px) {
-                .img__card {
-                width: 320px;
-                }
-            }
+    <script>
+      /*==================== SHOW MENU ====================*/
+      const navMenu = document.getElementById("nav-menu"),
+        navToggle = document.getElementById("nav-toggle"),
+        navClose = document.getElementById("nav-close");
 
-        </style>
+      /*===== MENU SHOW =====*/
+      /* Validate if constant exists */
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.add("show-menu");
+        });
+      }
 
+      /*===== MENU HIDDEN =====*/
+      /* Validate if constant exists */
+      if (navClose) {
+        navClose.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+        });
+      }
 
-        <script> 
-            /*==================== SHOW MENU ====================*/
-            const navMenu = document.getElementById('nav-menu'),
-                navToggle = document.getElementById('nav-toggle'),
-                navClose = document.getElementById('nav-close')
+      /*==================== REMOVE MENU MOBILE ====================*/
+      const navLink = document.querySelectorAll(".nav__link");
 
-            /*===== MENU SHOW =====*/
-            /* Validate if constant exists */
-            if(navToggle){
-                navToggle.addEventListener('click', () =>{
-                    navMenu.classList.add('show-menu')
-                })
-            }
-
-            /*===== MENU HIDDEN =====*/
-            /* Validate if constant exists */
-            if(navClose){
-                navClose.addEventListener('click', () =>{
-                    navMenu.classList.remove('show-menu')
-                })
-            }
-
-            /*==================== REMOVE MENU MOBILE ====================*/
-            const navLink = document.querySelectorAll('.nav__link')
-
-            function linkAction(){
-                const navMenu = document.getElementById('nav-menu')
-                // When we click on each nav__link, we remove the show-menu class
-                navMenu.classList.remove('show-menu')
-            }
-            navLink.forEach(n => n.addEventListener('click', linkAction))
-
-            /*==================== DARK LIGHT THEME ====================*/ 
-            const themeButton = document.getElementById('theme-button')
-            const darkTheme = 'dark-theme'
-            const iconTheme = 'ri-sun-line'
-
-            // Previously selected topic (if user selected)
-            const selectedTheme = localStorage.getItem('selected-theme')
-            const selectedIcon = localStorage.getItem('selected-icon')
-
-            // We obtain the current theme that the interface has by validating the dark-theme class
-            const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-            const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-            // We validate if the user previously chose a topic
-            if (selectedTheme) {
-            // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-            themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-            }
-
-            // Activate / deactivate the theme manually with the button
-            themeButton.addEventListener('click', () => {
-                // Add or remove the dark / icon theme
-                document.body.classList.toggle(darkTheme)
-                themeButton.classList.toggle(iconTheme)
-                // We save the theme and the current icon that the user chose
-                localStorage.setItem('selected-theme', getCurrentTheme())
-                localStorage.setItem('selected-icon', getCurrentIcon())
-
-            })
-            /*==================== CHANGE BACKGROUND HEADER ====================*/
-            function scrollHeader(){
-                const header = document.getElementById('header')
-                // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-                if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-            }
-            window.addEventListener('scroll', scrollHeader)
-        </script>
+      function linkAction() {
+        const navMenu = document.getElementById("nav-menu");
+        // When we click on each nav__link, we remove the show-menu class
+        navMenu.classList.remove("show-menu");
+      }
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
+    </script>
 
     <!--=================================== SCROLL REVEAL=================================-->
     <script src="./assest/Js/scrollreveal.min.js"></script>
@@ -331,13 +355,9 @@
     <script src="./assest/Js/swiper-bundle.min.js"></script>
 
     <!-- ===================================  Translate  ================================ -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./assest/Js/translate/ourOfffices.js"></script>
 
     <!-- =================================== Bootstrap ==================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ===================================  MAIN JS  ================================== -->
-    <!-- <script src="./assest/Js/main.js"></script> -->
-
-</body>
+  </body>
 </html>

@@ -25,57 +25,59 @@
         <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
-<body>
+<body id="body">
 
-     <header class="header" id="header">
+    <!--==================== Header ====================-->
+    <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <a href="./index.html"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
+                <a href="./index.html#home"><img src="./assest/img/logo.png" alt="" class="nav__logo-img"></a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link menu__home">Home</a>
+                        <a href="./index.html#home" class="nav__link menu__home" id="menu__home">Home</a>
                     </li>
                     <li class="nav__item dropdown">
-                        <a href="#about" class="nav__link-but dropdown-toggle menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <a href="#about" class="nav__link-but dropdown-toggle menu__about" id="menu__about" role="button" data-bs-toggle="dropdown">About Us</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item "><a class="nav__link menu__ourGroup" href="#Our Group">Our Group</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__chairman" href="./PreviousProjects.html">Previous projects</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__mission" href="./mission.html">our mission</a></li>
-                            <li class="dropdown-item "><a class="nav__link menu__vision" href="./vision.html">our Vision</a></li>
+                            <li class="dropdown-item "><a class="nav__link menu__ourGroup" id="menu__ourGroup" href="./index.html#Our Group">Our Group</a></li>
+                            <li class="dropdown-item "><a class="nav__link menu__chairman" id="menu__chairman" href="./PreviousProjects.html">Previous projects</a></li>
+                            <li class="dropdown-item "><a class="nav__link menu__mission" id="menu__mission" href="./mission.html">our mission</a></li>
+                            <li class="dropdown-item "><a class="nav__link menu__vision" id="menu__vision" href="./vision.html">our Vision</a></li>
                         </ul>
                     </li>
 
                     <li class="nav__item">
-                        <a href="./index.html#popular" class="nav__link menu__services">Our Services</a>
+                        <a href="./index.html#popular" class="nav__link menu__services" id="menu__services">Our Services</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="./OurOffices.html" class="nav__link menu__ourOffices">Our Offices</a>
+                        <a href="./OurOffices.html" class="nav__link menu__ourOffices" id="menu__ourOffices">Our Offices</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="./news.html" class="nav__link menu__news">News</a>
+                        <a href="./news.html" class="nav__link menu__news" id="menu__news">News</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="./job.html" class="nav__link menu__job">Job</a>
+                        <a href="./job.html" class="nav__link menu__job" id="menu__job">Job</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="./contact.html" class="nav__link menu__contact">Contact Us</a>
+                        <a href="./contact.html" class="nav__link menu__contact" id="menu__contact">Contact Us</a>
                     </li>
 
                     <li class="nav__item dropdown">
-                        <a href="#" class="nav__link-but dropdown-toggle menu__lang" role="button" data-bs-toggle="dropdown">The Language</a>
+                        <a href="#" class="nav__link-but dropdown-toggle menu__lang" id="menu__lang" role="button" data-bs-toggle="dropdown">The Language</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item "> <a href="./index.html" ><img src="./assest/img/en.png" width="25" height="12.5"></a> </li>
-                            <li class="dropdown-item "> <a href="./index.html" ><img src="./assest/img/ar.png" width="25" height="12.5"></a> </li>
+                            <li class="dropdown-item" id="en"> <img src="./assest/img/en.png" width="25" height="12.5"></a> </li>
+                            <li class="dropdown-item" id="ar"> <img src="./assest/img/ar.png" width="25" height="12.5"></a> </li>
                         </ul>
                     </li>
                 </ul>
+
                 <i class="ri-close-line nav__close" id="nav-close"></i>
             </div>
 
@@ -85,8 +87,10 @@
         </nav>
     </header>
 
+    <!--==================== Mission ====================-->
     <section class="Mission section" id="Mission">
-        <h2 class="section__title">Mission</h2>
+        <h2 class="section__title" id="section__title">
+            the Missions</h2>
         <div class="Mission__container container">
             <div class="Mission__group-img grid">
                 <div class="img__card">
@@ -102,9 +106,9 @@
                 </div>
             </div>
 
-            <div class="Mission__description">
+            <div class="Mission__description" id="Mission__description">
                 <p>
-                    Our mission at Special Power Company lies in spreading the culture of quality in its true sense in the field of contracting in order to create real competition between all companies and institutions that provide contracting services, whether they are large or emerging companies, and this message that it boasts is in order to provide the best services at the most appropriate cost.
+                    We always strive to provide services at a global level of planning and implementation and achieve our mission of By relying on the idea of teamwork and adopting a professional and ethical work environment that helps in creating ideas Integrated creative solutions.
                 </p>
 
                 
@@ -112,13 +116,13 @@
         </div>
     </section>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
         <div class="footer__container container grid">
             <div class="footer__content grid">
                 <div class="footer__data">
-                    <h3 class="footer__title">Special Power</h3>
-                    <p class="footer__description">We make your dreams come true</p>
+                    <h3 class="footer__title" id="footer__title">Special Power</h3>
+                    <p class="footer__description" id="footer__description">We make your dreams come true</p>
                     <div>
                         <a href="https://api.whatsapp.com" target="_blank" class="footer__social">
                             <i class="ri-whatsapp-fill"></i>
@@ -128,7 +132,7 @@
                             <i class="ri-twitter-fill"></i>
                         </a>
 
-                        <a href="mailto: s target="_blank" class="footer__social">
+                        <a href="mailto: s" target="_blank" class="footer__social">
                             <i class="ri-mail-fill"></i>
                             
                         </a>
@@ -139,54 +143,56 @@
                 </div>
 
                 <div class="footer__data">
-                    <h3 class="footer__subtitle">About</h3>
+                    <h3 class="footer__subtitle" id="footer__subtitle1">About</h3>
                     <ul>
                         <li class="footer__item">
-                            <a href="./index.html#popular" class="footer__link">Service</a>
+                            <a href="./index.html#popular" class="footer__link" id="footer__link1">Services</a>
                         </li>
                         <li class="footer__item">
-                            <a href="./mission.html" class="footer__link">Our Mission</a>
+                            <a href="./mission.html" class="footer__link" id="footer__link2">Our Mission</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__data">
-                    <h3 class="footer__subtitle">Company</h3>
+                    <h3 class="footer__subtitle" id="footer__subtitle2">Company</h3>
                     <ul>
                         <li class="footer__item">
-                            <a href="./ChairmanMessage.html" class="footer__link">Previous Projects</a>
+                            <a href="./ChairmanMessage.html" class="footer__link" id="footer__link3">Previous Projects</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#Our Group" class="footer__link">Our Group</a>
+                            <a href="./index.html#Our Group" class="footer__link" id="footer__link4">Our Group</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__data">
-                    <h3 class="footer__subtitle">Support</h3>
+                    <h3 class="footer__subtitle" id="footer__subtitle3">Support</h3>
                     <ul>
                         <li class="footer__item">
-                            <a href="./contact.html" class="footer__link">FAQs</a>
+                            <a href="./contact.html" class="footer__link" id="footer__link5">FAQs</a>
                         </li>
                         <li class="footer__item">
-                            <a href="./OurOffices.html" class="footer__link">Our Offices</a>
+                            <a href="./OurOffices.html" class="footer__link" id="footer__link6">Our Offices</a>
                         </li>
                         <li class="footer__item">
-                            <a href="./index.html#contact" class="footer__link">Contact Us</a>
+                            <a href="./index.html#contact" class="footer__link" id="footer__link7">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__rights">
-                <p class="footer__copy">&#169; 2023 Special Power. All rigths reserved.</p>
+                <p class="footer__copy" id="footer__copy">&#169; 2023 Special Power. All rigths reserved.</p>
+                <div class="footer__terms">
+                    <a href="https://github.com/Somaya95i?tab=repositories" class="footer__terms-link" target="_blank">Design and development by : Eng.Somaya Alansari </a>
+                    <!-- <a href="#" class="footer__terms-link">Privacy Policy</a> -->
+                </div>
             </div>
         </div>
     </footer>
 
-
-        <style>
-
+    <style>
             .Mission .section__title {
                 margin: 4rem 0;
             }
@@ -200,7 +206,8 @@
                 border-radius: 15px 50px;
                 box-shadow: 0 12px 16px rgb(237, 168, 168);
                 overflow: hidden;
-                width: 250px;
+                width: 350px;
+                margin-bottom: 2rem;
                 transition: .4s;
             }
             .img__card:hover {
@@ -216,10 +223,14 @@
                 -o-transform: translate3d(1px, 5%, 1em);
             }
             .Mission__description {
+                width: 80%;
+                background-color: rgba(248, 194, 194, 0.651);
+                padding: 3rem 2rem;
+                border-radius: 65px;
+                font-size: 20px;
+                margin: auto;
                 text-align: center;
-            }
-            .Mission__description p{
-                font-size: 18px;
+                box-shadow: 0px 0px 110px rgb(248, 194, 194);
             }
             .Mission__description ul{
                 list-style: disc;
@@ -239,18 +250,32 @@
                     border-radius: 15px 50px;
                     overflow: hidden;
                     width: 180px;
+                    height: 160px;
                     transition: .4s;
+                }
+                .img__card img{
+                    width: 180px;
+                    height: 160px;
                 }
                 .Mission__description p,
                 .Mission__description ul{
                     font-size: 12px;
                 }
             }
+            @media screen and (min-width : 992px) {
+                .img__card {
+                    width: 380px;
+                    height: 200px;
+                }
+                .img__card img{
+                    width: 380px;
+                    height: 200px;
+                }
+            }
 
-        </style>
+    </style>
 
-
-        <script> 
+    <script> 
             /*==================== SHOW MENU ====================*/
             const navMenu = document.getElementById('nav-menu'),
                 navToggle = document.getElementById('nav-toggle'),
@@ -282,44 +307,7 @@
             }
             navLink.forEach(n => n.addEventListener('click', linkAction))
 
-            /*==================== DARK LIGHT THEME ====================*/ 
-            const themeButton = document.getElementById('theme-button')
-            const darkTheme = 'dark-theme'
-            const iconTheme = 'ri-sun-line'
-
-            // Previously selected topic (if user selected)
-            const selectedTheme = localStorage.getItem('selected-theme')
-            const selectedIcon = localStorage.getItem('selected-icon')
-
-            // We obtain the current theme that the interface has by validating the dark-theme class
-            const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-            const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-            // We validate if the user previously chose a topic
-            if (selectedTheme) {
-            // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-            themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-            }
-
-            // Activate / deactivate the theme manually with the button
-            themeButton.addEventListener('click', () => {
-                // Add or remove the dark / icon theme
-                document.body.classList.toggle(darkTheme)
-                themeButton.classList.toggle(iconTheme)
-                // We save the theme and the current icon that the user chose
-                localStorage.setItem('selected-theme', getCurrentTheme())
-                localStorage.setItem('selected-icon', getCurrentIcon())
-
-            })
-            /*==================== CHANGE BACKGROUND HEADER ====================*/
-            function scrollHeader(){
-                const header = document.getElementById('header')
-                // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-                if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-            }
-            window.addEventListener('scroll', scrollHeader)
-        </script>
+    </script>
 
     <!--=================================== SCROLL REVEAL=================================-->
     <script src="./assest/Js/scrollreveal.min.js"></script>
@@ -328,13 +316,12 @@
     <script src="./assest/Js/swiper-bundle.min.js"></script>
 
     <!-- ===================================  Translate  ================================ -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./assest/Js/translate/mission.js"></script>
 
     <!-- =================================== Bootstrap ==================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ===================================  MAIN JS  ================================== -->
-    <!-- <script src="./assest/Js/main.js"></script> -->
+
 
 </body>
 </html>
